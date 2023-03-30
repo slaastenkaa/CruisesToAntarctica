@@ -7,7 +7,7 @@
     <meta name="description" content="Круизы в Антарктику">
     <title>Круизы в Антарктику</title>
     <link rel="icon" href="./img/favicon/favicon.ico">
-    <link rel="icon" href="./img/favicon/favicon-32x32.png" type="image/svg+xml">
+    <link rel="icon" href="./img/favicon/favicon.png" type="image/svg+xml">
     <link rel="apple-touch-icon" sizes="80x80" href="./img/favicon/apple-touch-icon.png">
     <link rel="manifest" href="./img/favicon/manifest.webmanifest">
     <link rel="preload" href="./fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="wrapper" data-header data-close-menu>
-      <header class="header">
+    <div class="wrapper" data-header>
+      <header class="header" data-close-menu>
         <div class="container header__container">
           <nav class="header__nav nav">
             <a class="nav__logo link" href="./index.html" aria-label="Переход на главную страницу.">
@@ -65,7 +65,54 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="container"></div>
+        <div class="container footer__container">
+          <a class="footer__logo link" href="./index.html" aria-label="Переход на главную страницу.">
+            <svg width="70" height="38" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#logo-cruises-to-arctica"></use>
+            </svg>
+            <span class="visually-hidden">Логотип круизов в Антарктику.</span>
+          </a>
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a class="footer__item-link link" href="#">Преимущества</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link link" href="#">Направления</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link link" href="#">Ближайшие круизы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer__list--social list">
+            <li class="footer__item--social">
+              <a class="footer__item--social-link link" href="#">
+                <svg width="12" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#icon-ok"></use>
+                </svg>
+                <span class="visually-hidden">Ссылка на Одноклассники.</span>
+              </a>
+            </li>
+            <li class="footer__item--social">
+              <a class="footer__item--social-link link" href="#">
+                <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#icon-yandex"></use>
+                </svg>
+                <span class="visually-hidden">Ссылка на Яндекс.</span>
+              </a>
+            </li>
+            <li class="footer__item--social">
+              <a class="footer__item--social-link link" href="#">
+                <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#icon-reddit"></use>
+                </svg>
+                <span class="visually-hidden">Ссылка на Реддит.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
 
