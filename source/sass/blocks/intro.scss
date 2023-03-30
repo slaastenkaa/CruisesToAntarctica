@@ -18,7 +18,7 @@
   padding: 234px 198px 259px;
 }
 
-.intro__title {
+.intro__container h1 {
   margin-bottom: 12px;
   font-family: inherit;
   font-weight: 700;
@@ -28,7 +28,7 @@
   text-shadow: $shadow-dark;
 }
 
-.intro__text {
+.intro__container p {
   margin-top: 12px;
   font-family: inherit;
   font-weight: 400;
@@ -47,13 +47,13 @@
     padding: 235px 45px 257px;
   }
 
-  .intro__title {
+  .intro__container h1 {
     font-size: 50px;
     line-height: 61px;
     transform: translate(0, -1px);
   }
 
-  .intro__text {
+  .intro__container p {
     font-size: 18px;
     line-height: 22px;
   }
@@ -65,13 +65,13 @@
     padding-bottom: 163px;
   }
 
-  .intro__title {
+  .intro__container h1 {
     margin-bottom: 10px;
     font-size: 36px;
     line-height: 45px;
   }
 
-  .intro__text {
+  .intro__container p {
     margin-top: 10px;
     width: 75%;
     font-size: 16px;
