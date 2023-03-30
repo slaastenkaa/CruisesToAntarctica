@@ -32,7 +32,7 @@
             </button>
             <ul class="nav__list list">
               <li class="nav__item">
-                <a class="nav__item-link link" href="#">Преимущества</a>
+                <a class="nav__item-link link" href="#advantage">Преимущества</a>
               </li>
               <li class="nav__item">
                 <a class="nav__item-link link" href="#">Направления</a>
@@ -59,7 +59,7 @@
             srcset="img/background-hero@2x.jpg 2x">
           </picture>
           <div class="container intro__container">
-            <h1>Круизы в&nbsp;Антарктику </h1>
+            <h1>Круизы в&nbsp;Антарктику</h1>
             <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
           </div>
         </section>
@@ -82,6 +82,43 @@
             </div>
           </div>
         </section>
+        <section class="advantage" id="advantage">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/background-advantages-mobil.webp, img/background-advantages-mobil@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/background-advantages-tablet.webp, img/background-advantages-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/background-advantages.webp, img/background-advantages@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/background-advantages-mobil.jpg, img/background-advantages-mobil@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/background-advantages-tablet.jpg, img/background-advantages-tablet@2x.jpg 2x">
+            <img src="img/background-advantages.jpg" width="1366" height="562" alt="Волшебный мир айсбергов и пингвинов."
+            srcset="img/background-advantages@2x.jpg 2x">
+          </picture>
+          <div class="container advantage__container">
+            <h2>Преимущества</h2>
+            <ul class="advantage__list list">
+              <li class="advantage__item advantage__item-cruise">
+                <svg width="27" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#icons-liner"></use>
+                </svg>
+                <h3>Небольшой круизный лайнер</h3>
+                <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300 гостей, поможет избежать шума и очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+              </li>
+              <li class="advantage__item advantage__item-sistem">
+                <svg width="38" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#icons-check-mark"></use>
+                </svg>
+                <h3>Система все&nbsp;включено</h3>
+                <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+              </li>
+              <li class="advantage__item advantage__item-tour">
+                <svg width="44" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#icons-liner-second"></use>
+                </svg>
+                <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+                <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac c опытными экскурсоводами.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container footer__container">
@@ -93,7 +130,7 @@
           </a>
           <ul class="footer__list list">
             <li class="footer__item">
-              <a class="footer__item-link link" href="#">Преимущества</a>
+              <a class="footer__item-link link" href="#advantage">Преимущества</a>
             </li>
             <li class="footer__item">
               <a class="footer__item-link link" href="#">Направления</a>
