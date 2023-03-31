@@ -110,7 +110,7 @@
         <div class="container advantage__container">
           <h2>Преимущества</h2>
           <ul class="advantage__list list">
-            <li class="advantage__item advantage__item-cruise">
+            <li class="advantage__item advantage__item-cruise" tabindex="0">
               <svg width="27" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="./img/sprite.svg#icons-liner"></use>
               </svg>
@@ -118,7 +118,7 @@
               <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300 гостей, поможет избежать шума и очередей
                 и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
             </li>
-            <li class="advantage__item advantage__item-sistem">
+            <li class="advantage__item advantage__item-sistem" tabindex="0">
               <svg width="38" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="./img/sprite.svg#icons-check-mark"></use>
               </svg>
@@ -126,7 +126,7 @@
               <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны
                 для вас 24&nbsp;часа.</p>
             </li>
-            <li class="advantage__item advantage__item-tour">
+            <li class="advantage__item advantage__item-tour" tabindex="0">
               <svg width="44" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="./img/sprite.svg#icons-liner-second"></use>
               </svg>
@@ -367,6 +367,51 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="booking" data-form-validate data-callback="base">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/background-booking-mobil.webp, img/background-booking-mobil@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)"
+            srcset="img/background-booking-tablet.webp, img/background-booking-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/background-booking.webp, img/background-booking@2x.webp 2x">
+          <source media="(max-width: 767px)"
+            srcset="img/background-booking-mobil.jpg, img/background-booking-mobil@2x.jpg 2x">
+          <source media="(max-width: 1023px)"
+            srcset="img/background-booking-tablet.jpg, img/background-booking-tablet@2x.jpg 2x">
+          <img src="img/background-booking.jpg" width="1366" height="650" alt="Волшебный мир айсбергов."
+            srcset="img/background-booking@2x.jpg 2x">
+        </picture>
+        <div class="container booking__container">
+          <div class="booking__content">
+            <h2>Раннее бронирование</h2>
+            <p>Забронируйте тур за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
+          </div>
+          <div class="booking__form">
+            <form action="https://echo.htmlacademy.ru/" method="get" novalidate="">
+              <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+              <label for="name" data-required="" data-validate-type="text" data-message-base="Данное поле необходимо заполнить" class="is-invalid">
+                <input id="name" type="text" name="Name" placeholder="Имя" required="" aria-invalid="true">
+                <span class="booking__form-span">Имя</span>
+              </label>
+              <label for="phone" data-required="" data-validate-type="phone" data-message-base="Данное поле необходимо заполнить" data-phone-length="18" class="is-invalid">
+                <input id="phone" type="tel" name="Phone" placeholder="Телефон" required="" aria-invalid="true">
+                <span class="booking__form-span">Телефон</span>
+              </label>
+              <label for="email" data-required="" data-validate-type="email" class="is-invalid">
+                <input id="email" type="email" name="Phone" placeholder="Email" required="" aria-invalid="true">
+                <span class="booking__form-span">Email</span>
+              </label>
+              <div class="booking__form-checkbox">
+                <label for="checkbox" data-required="" data-validate-type="checkbox" data-message-base="Данное поле необходимо заполнить" class="is-invalid">
+                  <input id="checkbox" type="checkbox" name="type" value="Я согласен на обработку моих персональных данных" required="" checked="" aria-invalid="false">
+                  <span class="booking__form-checkbox-span">Я согласен на обработку моих персональных данных</span>
+                </label>
+              </div>
+              <button class="booking__form-button button" type="submit">Оставить заявку</button>
+            </form>
+          </div> 
         </div>
       </section>
       <section class="contact" id="contact"></section>
