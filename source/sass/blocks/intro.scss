@@ -59,7 +59,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $vp-767) {
   .intro__container {
     padding-top: 153px;
     padding-bottom: 163px;

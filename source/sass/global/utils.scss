@@ -83,14 +83,15 @@
 .button {
   width: fit-content;
   height: fit-content;
-  font-family: $ff-montserrat;
-  font-weight: 700;
+  padding: 9px 10px 8px;
+  font-family: inherit;
+  font-weight: 600;
   font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  background: transparent;
+  line-height: 21px;
+  color: $color-tangaroa;
+  background: $color-alice-blue;
+  outline: none;
+  border: none;
   user-select: none;
   cursor: pointer;
 }

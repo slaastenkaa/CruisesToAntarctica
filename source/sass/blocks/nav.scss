@@ -89,7 +89,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $vp-767) {
   .nav {
     position: relative;
     justify-content: space-between;
@@ -197,17 +197,19 @@
     align-content: flex-start;
     grid-column: 1/-1;
     gap: 0;
-    margin-left: 0;
+    margin-left: 12px;
   }
 
   .is-open .nav__item-link {
-    padding: 14px 12px;
+    width: max-content;
+    padding: 14px 0;
     font-size: 18px;
     line-height: 22px;
     color: $color-tangaroa;
   }
 
   .nav__item-link::before {
-    display: none;
+    bottom: 8px;
+    background-color: $color-tangaroa;
   }
 }

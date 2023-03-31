@@ -130,7 +130,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $vp-767) {
   .advantage__container {
     padding-top: 37px;
     padding-bottom: 64px;
