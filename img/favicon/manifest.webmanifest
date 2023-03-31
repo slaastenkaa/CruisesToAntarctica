@@ -1,0 +1,23 @@
+{
+    "name":"Круизы в Антарктику",
+    "short_name":"Круизы в Антарктику",
+    "icons":
+    [{
+        "src":"/favicon-16x16.png",
+        "sizes":"16x16",
+        "type":"image/png"
+    },
+    {
+        "src":"/android-chrome-512x512.png",
+        "sizes":"512x512",
+        "type":"image/png"
+    },
+    {
+        "src": "/apple-touch-icon.png",
+        "type": "image/png"
+    }
+    ],
+    "theme_color":"#ffffff",
+    "background_color":"#ffffff",
+    "display":"standalone"
+}
