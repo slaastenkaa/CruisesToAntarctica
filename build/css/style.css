@@ -1115,9 +1115,6 @@ button,
   -ms-grid-columns: 1.2fr 1fr;
   grid-template-columns: 1.2fr 1fr;
   gap: 141px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .booking__content {
@@ -1244,6 +1241,7 @@ button,
   -webkit-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
+  opacity: 0;
 }
 
 .booking__form .is-invalid {
@@ -1343,13 +1341,15 @@ button,
   -ms-grid-columns: 0.2fr 3fr;
   grid-template-columns: 0.2fr 3fr;
   gap: 4px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .booking__form-checkbox-span {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0;
   font-family: inherit;
   font-weight: 400;
@@ -2447,6 +2447,9 @@ button,
   .booking__container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 39px;
+    padding-top: 72px;
+    padding-bottom: 100px;
   }
 
   .booking__content {
@@ -2455,6 +2458,7 @@ button,
   }
 
   .booking__content h2 {
+    margin-bottom: 5px;
     font-size: 34px;
     line-height: 51px;
   }
@@ -2464,6 +2468,15 @@ button,
     width: 58%;
     font-size: 18px;
     line-height: 27px;
+  }
+
+  .booking__form {
+    margin: auto;
+    width: 59%;
+  }
+
+  .booking__form form {
+    padding: 26px 49px 50px;
   }
 
   .footer__container {
@@ -2788,6 +2801,68 @@ button,
   .catalog__item:focus-within .catalog__item--container,
   .catalog__item:active .catalog__item--container {
     padding: 29px 25px 35px;
+  }
+
+  .booking__container {
+    padding-top: 52px;
+    padding-bottom: 66px;
+    gap: 21px;
+  }
+
+  .booking__content h2 {
+    margin-bottom: 13px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .booking__content p {
+    width: 95%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .booking__form {
+    width: 100%;
+  }
+
+  .booking__form form {
+    padding: 35px 30px 39px;
+  }
+
+  .booking__form p {
+    margin: auto auto 28px;
+    line-height: 25px;
+    text-align: center;
+    width: 95%;
+  }
+
+  .booking__form-checkbox {
+    margin-bottom: 27px;
+    -webkit-transform: translate(0, -2px);
+    -ms-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+  }
+
+  .booking__form-checkbox label {
+    -ms-grid-columns: 0.3fr 3fr;
+    grid-template-columns: 0.3fr 3fr;
+    gap: 7px;
+  }
+
+  .booking__form-checkbox input,
+  .booking__form-checkbox input::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .booking__form-checkbox input:checked::after {
+    top: 5px;
+    left: 5px;
+  }
+
+  .booking__form-checkbox-span {
+    line-height: 11px;
+    width: 77%;
   }
 
   .footer {
