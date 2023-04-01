@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/montserrat-regular.woff2") format("woff2"), url("../../fonts/montserrat-regular.woff") format("woff");
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-weight: 500;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/montserrat-medium.woff2") format("woff2"), url("../../fonts/montserrat-medium.woff") format("woff");
+  src: url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
 }
 
 @font-face {
