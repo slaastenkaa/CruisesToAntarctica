@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Круизы в Антарктику">
   <title>Круизы в Антарктику</title>
-  <link rel="icon" href="./img/favicon/favicon.ico">
-  <link rel="icon" href="./img/favicon/favicon.png" type="image/svg+xml">
-  <link rel="apple-touch-icon" sizes="80x80" href="./img/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="./img/favicon/manifest.webmanifest">
-  <link rel="preload" href="./fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="icon" href="img/favicon/favicon.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="80x80" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicon/manifest.webmanifest">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -35,16 +35,16 @@
           </button>
           <ul class="nav__list list">
             <li class="nav__item">
-              <a class="nav__item-link link" href="#advantage">Преимущества</a>
+              <a class="nav__item-link link" href="#advantage" data-close-menu>Преимущества</a>
             </li>
             <li class="nav__item">
-              <a class="nav__item-link link" href="#travel">Направления</a>
+              <a class="nav__item-link link" href="#travel" data-close-menu>Направления</a>
             </li>
             <li class="nav__item">
-              <a class="nav__item-link link" href="#catalog">Ближайшие круизы</a>
+              <a class="nav__item-link link" href="#catalog" data-close-menu>Ближайшие круизы</a>
             </li>
             <li class="nav__item">
-              <a class="nav__item-link link" href="#contact">Контакты</a>
+              <a class="nav__item-link link" href="#contact" data-close-menu>Контакты</a>
             </li>
           </ul>
         </nav>
@@ -369,7 +369,7 @@
           </ul>
         </div>
       </section>
-      <section class="booking">
+      <section class="booking" id="booking" data-form-validate data-callback="base">
         <picture>
           <source type="image/webp" media="(max-width: 767px)"
             srcset="img/background-booking-mobil.webp, img/background-booking-mobil@2x.webp 2x">
@@ -383,34 +383,33 @@
           <img src="img/background-booking.jpg" width="1366" height="650" alt="Волшебный мир айсбергов."
             srcset="img/background-booking@2x.jpg 2x">
         </picture>
-        <div class="container booking__container" data-form-validate>
+        <div class="container booking__container">
           <div class="booking__content">
             <h2>Раннее бронирование</h2>
             <p>Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
-          <div class="booking__form" data-callback="base">
+          <div class="booking__form">
             <form action="https://echo.htmlacademy.ru/" method="get">
               <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</p>
-              <label for="name" data-required="" data-validate-type="text"
-                data-message-base="Данное поле необходимо заполнить" class="is-invalid">
-                <input id="name" type="text" name="Name" placeholder="Имя" required="" aria-invalid="true">
+              <label for="name" data-required data-validate-type="text"
+              data-message-base="Данное поле необходимо заполнить">
+                <input id="name" type="text" name="Name" placeholder="Имя" required>
                 <span class="booking__form-span">Имя</span>
               </label>
-              <label for="phone" data-required="" data-validate-type="phone"
-                data-message-base="Данное поле необходимо заполнить" data-phone-length="18" class="is-invalid">
-                <input id="phone" type="tel" name="Phone" placeholder="Телефон" required="" aria-invalid="true">
+              <label for="phone" data-required data-validate-type="phone"
+              data-message-base="Данное поле необходимо заполнить">
+                <input id="phone" type="tel" name="Phone" placeholder="Телефон" required>
                 <span class="booking__form-span">Телефон</span>
               </label>
-              <label for="email" data-required="" data-validate-type="email" class="is-invalid">
-                <input id="email" type="email" name="Phone" placeholder="Email" required="" aria-invalid="true">
+              <label for="email" data-validate-type="email">
+                <input id="email" type="email" name="Phone" placeholder="Email" required>
                 <span class="booking__form-span">Email</span>
               </label>
               <div class="booking__form-checkbox">
-                <label for="checkbox" data-required="" data-validate-type="checkbox"
-                  data-message-base="Необходимо согласие на обработку" class="is-invalid">
+                <label for="checkbox" data-validate-type="checkbox"
+                  data-message-base="Необходимо согласие на обработку">
                   <input id="checkbox" type="checkbox" name="type"
-                    value="Я согласен на обработку моих персональных данных" required="" checked=""
-                    aria-invalid="false">
+                    value="Я согласен на обработку моих персональных данных" required>
                   <span class="booking__form-checkbox-span">Я согласен на обработку моих персональных данных</span>
                 </label>
               </div>
