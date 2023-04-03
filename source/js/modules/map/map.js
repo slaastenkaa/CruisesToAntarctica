@@ -25,7 +25,7 @@ export function initMap(mapData) {
   document.body.append(scriptElement);
 }
 
-// const map = document.getElementById('map');
+const map = document.getElementById('map');
 const observer = new IntersectionObserver((entries) => {
   if (entries[0].isIntersecting) {
     initMap({
@@ -46,7 +46,7 @@ const observer = new IntersectionObserver((entries) => {
       }],
     });
 
-    // observer.unobserve(map);
+    observer.unobserve(map);
   }
 }, {
   rootMargin: '0px',
