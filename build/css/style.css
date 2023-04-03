@@ -1016,6 +1016,8 @@ button,
   z-index: -1;
   -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
 }
 
 .catalog__item-content {

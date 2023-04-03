@@ -368,7 +368,7 @@
           </ul>
         </div>
       </section>
-      <section class="booking" id="booking" data-form-validate data-callback="base">
+      <section class="booking" id="booking">
         <picture>
           <source type="image/webp" media="(max-width: 767px)"
             srcset="img/background-booking-mobil.webp, img/background-booking-mobil@2x.webp 2x">
@@ -387,7 +387,7 @@
             <h2>Раннее бронирование</h2>
             <p>Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
-          <div class="booking__form">
+          <div class="booking__form" data-form-validate data-callback="base">
             <form action="https://echo.htmlacademy.ru/" method="get">
               <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</p>
               <label for="name" data-required data-validate-type="text"
@@ -401,13 +401,13 @@
                 <span class="booking__form-span">Телефон</span>
               </label>
               <label for="email" data-validate-type="email">
-                <input id="email" type="email" name="Phone" placeholder="Email" required>
+                <input id="email" type="email" name="Email" placeholder="Email">
                 <span class="booking__form-span">Email</span>
               </label>
               <div class="booking__form-checkbox">
                 <label for="checkbox" data-validate-type="checkbox"
                   data-message-base="Необходимо согласие на обработку">
-                  <input id="checkbox" type="checkbox" name="type"
+                  <input id="checkbox" type="checkbox" name="Agreement"
                     value="Я согласен на обработку моих персональных данных" required checked>
                   <span class="booking__form-checkbox-span">Я согласен на обработку моих персональных данных</span>
                 </label>
