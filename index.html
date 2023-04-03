@@ -188,7 +188,7 @@
                   <dt>Цена</dt>
                   <dd>от 14500 $</dd>
                 </dl>
-                <a class="catalog__item--button button">Забронировать</a>
+                <a class="catalog__item--button button" href="#">Забронировать</a>
               </div>
             </li>
             <li class="catalog__item" tabindex="0" aria-label="Круиз Атлантис">
@@ -392,12 +392,12 @@
             <form action="https://echo.htmlacademy.ru/" method="get">
               <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</p>
               <label for="name" data-required data-validate-type="text"
-              data-message-base="Данное поле необходимо заполнить">
+                data-message-base="Данное поле необходимо заполнить">
                 <input id="name" type="text" name="Name" placeholder="Имя" required>
                 <span class="booking__form-span">Имя</span>
               </label>
               <label for="phone" data-required data-validate-type="phone"
-              data-message-base="Данное поле необходимо заполнить">
+                data-message-base="Данное поле необходимо заполнить">
                 <input id="phone" type="tel" name="Phone" placeholder="Телефон" required>
                 <span class="booking__form-span">Телефон</span>
               </label>
@@ -409,7 +409,7 @@
                 <label for="checkbox" data-validate-type="checkbox"
                   data-message-base="Необходимо согласие на обработку">
                   <input id="checkbox" type="checkbox" name="type"
-                    value="Я согласен на обработку моих персональных данных" required>
+                    value="Я согласен на обработку моих персональных данных" required checked>
                   <span class="booking__form-checkbox-span">Я согласен на обработку моих персональных данных</span>
                 </label>
               </div>
@@ -420,21 +420,20 @@
       </section>
       <section class="contact" id="contact">
         <div class="container contact__container">
-          <div class="contact__map">
-            <!-- <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/map-mobil.webp, img/map-mobil@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/map.webp, img/map@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/map-mobil.jpg, img/map-mobil@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
-              <img src="img/map.jpg" width="560" height="306"
-                alt="Адрес офиса - г. Санкт Петербург, ул. Большая Конюшенная, 19/8." srcset="img/mapg@2x.jpg 2x">
-            </picture> -->
-            <iframe
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3A86dccb25ac440e874f4ebe20d48b662bfc20aebf4bf48de82ca9f45cf0a762be&amp;source=constructor"
-              width="100%" height="306" frameborder="0"></iframe>
+          <div class="contact__map" id="map" data-map-image>
+            <div class="contact__map--image">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/map-mobil.webp, img/map-mobil@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/map.webp, img/map@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/map-mobil.jpg, img/map-mobil@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
+                <img src="img/map.jpg" width="560" height="306"
+                  alt="Адрес офиса - г. Санкт Петербург, ул. Большая Конюшенная, 19/8." srcset="img/mapg@2x.jpg 2x">
+              </picture>
+            </div>
           </div>
           <div class="contact__content">
             <h3>У&nbsp;вас ещё остались вопросы или сомнения?
@@ -509,7 +508,6 @@
       </div>
     </footer>
   </div>
-
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

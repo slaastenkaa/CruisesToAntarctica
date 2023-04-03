@@ -943,7 +943,7 @@ button,
 
 .catalog__item {
   position: relative;
-  height: 386px;
+  min-height: 386px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011c40));
   background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011c40 100%);
   background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
@@ -974,7 +974,16 @@ button,
 .catalog__item:focus .catalog__item--container h3,
 .catalog__item:focus-within .catalog__item--container h3,
 .catalog__item:active .catalog__item--container h3 {
+  max-height: 27px;
   margin-bottom: 7px;
+  overflow-y: scroll;
+}
+
+.catalog__item:hover .catalog__item--container h3::-webkit-scrollbar,
+.catalog__item:focus .catalog__item--container h3::-webkit-scrollbar,
+.catalog__item:focus-within .catalog__item--container h3::-webkit-scrollbar,
+.catalog__item:active .catalog__item--container h3::-webkit-scrollbar {
+  width: 0;
 }
 
 .catalog__item:hover .catalog__item--list,
@@ -1073,6 +1082,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  text-align: center;
   border: 1px solid #f9fbfd;
   -webkit-transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   -o-transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
@@ -1446,6 +1456,17 @@ button,
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 38px;
+}
+
+.contact__map {
+  height: 306px;
+}
+
+.contact__map--image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: bottom;
+  object-position: bottom;
 }
 
 .contact__content {
@@ -2508,7 +2529,7 @@ button,
   }
 
   .catalog__item {
-    height: 387px;
+    min-height: 387px;
   }
 
   .catalog__item:hover .catalog__item--container,
@@ -2572,7 +2593,11 @@ button,
     gap: 13px;
   }
 
-  .contact__map iframe {
+  .contact__map--image img {
+    height: 335px;
+  }
+
+  .contact__map {
     height: 335px;
   }
 
@@ -2676,6 +2701,9 @@ button,
   }
 
   .nav__logo {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     padding: 20px 0;
   }
 
@@ -2989,12 +3017,13 @@ button,
   }
 
   .contact__map {
+    height: 316px;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
   }
 
-  .contact__map iframe {
+  .contact__map--image img {
     height: 316px;
   }
 
