@@ -5,8 +5,8 @@ const createMap = ({id, initials, placemark}) => {
   map.geoObjects.add(new window.ymaps.Placemark(map.getCenter(), ...placemark));
 };
 
-export function initMap(mapData) {
-  document.querySelector('.contact__map--image').style.display = 'none';
+function initMap(mapData) {
+  document.querySelector('.contact__map-image').style.display = 'none';
   if (apiLoaded) {
     createMap(mapData);
 
@@ -54,3 +54,5 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(map);
+
+export {map, observer};

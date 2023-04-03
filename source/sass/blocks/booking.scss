@@ -21,7 +21,7 @@
 }
 
 .booking__content {
-  margin-left: 63px;
+  margin: auto auto auto 63px;
   transform: translate(0, -12px);
 }
 
@@ -207,6 +207,7 @@
   border-radius: 0;
   transition: $trans-easeinout;
   appearance: none;
+  cursor: pointer;
 }
 
 .booking__form-checkbox input::after {
