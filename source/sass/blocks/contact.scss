@@ -9,6 +9,15 @@
   gap: 38px;
 }
 
+.contact__map {
+  height: 306px;
+}
+
+.contact__map--image img {
+  object-fit: cover;
+  object-position: bottom;
+}
+
 .contact__content {
   margin: auto;
   margin-left: 60px;
@@ -75,7 +84,11 @@
     gap: 13px;
   }
 
-  .contact__map iframe {
+  .contact__map--image img {
+    height: 335px;
+  }
+
+  .contact__map {
     height: 335px;
   }
 
@@ -104,10 +117,11 @@
   }
 
   .contact__map {
+    height: 316px;
     order: 2;
   }
 
-  .contact__map iframe {
+  .contact__map--image img {
     height: 316px;
   }
 

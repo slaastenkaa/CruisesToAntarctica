@@ -96,6 +96,7 @@
   }
 
   .nav__logo {
+    width: fit-content;
     padding: 20px 0;
   }
 
@@ -141,6 +142,7 @@
 
   .is-open .nav {
     position: absolute;
+    right: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content;
@@ -160,7 +162,7 @@
 
   .is-open .nav__button {
     margin-left: auto;
-    transform: translate(11px, 0);
+    transform: translate(-2px, 0);
     transition: $trans-modal;
   }
 
@@ -188,7 +190,7 @@
   .is-open .nav__button:focus,
   .is-open .nav__button:active {
     filter: drop-shadow(0 0 1px $color-tangaroa);
-    transform: translate(11px, 0) $trans-scale3d;
+    transform: translate(-3px, 0) $trans-scale3d;
   }
 
   .is-open .nav__list {

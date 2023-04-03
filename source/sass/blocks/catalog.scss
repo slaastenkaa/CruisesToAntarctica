@@ -21,7 +21,7 @@
 
 .catalog__item {
   position: relative;
-  height: 386px;
+  min-height: 386px;
   background: $black-to-image;
   overflow: hidden;
   transition: $trans-modal;
@@ -46,7 +46,13 @@
   }
 
   .catalog__item--container h3 {
+    max-height: 27px;
     margin-bottom: 7px;
+    overflow-y: scroll;
+  }
+
+  .catalog__item--container h3::-webkit-scrollbar {
+    width: 0;
   }
 
   .catalog__item--list {
@@ -121,6 +127,7 @@
   margin-top: auto;
   width: 100%;
   justify-content: center;
+  text-align: center;
   border: 1px solid $color-alice-blue;
   transition: $trans-modal;
 }
@@ -152,7 +159,7 @@
   }
 
   .catalog__item {
-    height: 387px;
+    min-height: 387px;
   }
 
   .catalog__item:hover,
