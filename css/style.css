@@ -759,7 +759,7 @@ button,
   content: "";
   width: 100%;
   height: 1px;
-  bottom: 22px;
+  bottom: 0;
   left: 0;
   background-color: #d8d8d9;
   -webkit-transform: scaleX(0);
@@ -2869,8 +2869,8 @@ button,
   .is-open .nav__button:active {
     -webkit-filter: drop-shadow(0 0 1px #011c40);
     filter: drop-shadow(0 0 1px #011c40);
-    -webkit-transform: translate(-3px, 0) scale3d(1.02, 1.02, 1.02);
-    transform: translate(-3px, 0) scale3d(1.02, 1.02, 1.02);
+    -webkit-transform: translate(12px, 0) scale3d(1.02, 1.02, 1.02);
+    transform: translate(12px, 0) scale3d(1.02, 1.02, 1.02);
   }
 
   .is-open .nav__list {
@@ -2899,7 +2899,7 @@ button,
   }
 
   .nav__item-link::before {
-    bottom: 8px;
+    bottom: 4px;
     background-color: #011c40;
   }
 
