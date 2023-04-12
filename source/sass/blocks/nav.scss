@@ -50,7 +50,7 @@
   content: "";
   width: 100%;
   height: 1px;
-  bottom: 22px;
+  bottom: 0;
   left: 0;
   background-color: $color-quartz;
   transform: scaleX(0);
@@ -193,7 +193,7 @@
   .is-open .nav__button:focus,
   .is-open .nav__button:active {
     filter: drop-shadow(0 0 1px $color-tangaroa);
-    transform: translate(-3px, 0) $trans-scale3d;
+    transform: translate(12px, 0) $trans-scale3d;
   }
 
   .is-open .nav__list {
@@ -214,7 +214,7 @@
   }
 
   .nav__item-link::before {
-    bottom: 8px;
+    bottom: 4px;
     background-color: $color-tangaroa;
   }
 }
