@@ -684,6 +684,11 @@ button,
   z-index: 1;
 }
 
+.header__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -697,7 +702,7 @@ button,
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 35px 3px;
+  padding: 5px 3px;
 }
 
 .nav__logo svg {
@@ -738,7 +743,7 @@ button,
 .nav__item-link {
   position: relative;
   display: block;
-  padding: 30px 3px;
+  padding: 5px 3px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -821,9 +826,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 50%;
   height: auto;
 }
@@ -942,12 +944,15 @@ button,
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0 18px;
-  gap: 30px;
+  gap: 2.2vw;
 }
 
 .catalog__item {
+  display: -ms-grid;
+  display: grid;
   position: relative;
   min-height: 386px;
+  height: auto;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011c40));
   background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011c40 100%);
   background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
@@ -1009,11 +1014,14 @@ button,
   display: flex;
 }
 
+.catalog__item-picture {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
 .catalog__item img {
-  position: absolute;
   width: 100%;
   height: 100%;
-  z-index: -1;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
@@ -1023,6 +1031,8 @@ button,
 .catalog__item-content {
   display: -ms-grid;
   display: grid;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
   height: 100%;
   padding: 8px 29px;
   -webkit-transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
@@ -1125,17 +1135,18 @@ button,
 }
 
 .booking__container {
-  display: -ms-grid;
-  display: grid;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  -ms-grid-columns: 1.2fr 1fr;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 141px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 50px 163px;
+  gap: 1vw;
 }
 
 .booking__content {
-  margin: auto auto auto 63px;
+  margin: auto;
   -webkit-transform: translate(0, -12px);
   -ms-transform: translate(0, -12px);
   transform: translate(0, -12px);
@@ -1152,16 +1163,12 @@ button,
 
 .booking__content p {
   margin-top: 6px;
-  width: 77%;
+  width: 60%;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: #011c40;
-}
-
-.booking__form {
-  margin-right: 63px;
 }
 
 .booking__form form {
@@ -1173,6 +1180,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 26px 50px 50px;
+  width: 403px;
   background-color: #011c40;
 }
 
@@ -1507,8 +1515,9 @@ button,
 .contact__item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.2fr 3.4fr;
-  grid-template-columns: 0.2fr 3.4fr;
+  -ms-grid-columns: 0.2fr 4.5fr;
+  grid-template-columns: 0.2fr 4.5fr;
+  gap: 0.5vw;
   -webkit-transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   -o-transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
@@ -1538,6 +1547,9 @@ button,
 }
 
 .contact__item a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
@@ -1546,7 +1558,7 @@ button,
 }
 
 .footer {
-  margin-top: 63px;
+  margin-top: 62px;
   background-color: #011c40;
 }
 
@@ -1555,10 +1567,15 @@ button,
   display: grid;
   -ms-grid-columns: 0.27fr 2fr 0.5fr;
   grid-template-columns: 0.27fr 2fr 0.5fr;
+  padding-top: 49px;
+  padding-bottom: 41px;
 }
 
 .footer__logo {
-  padding: 50px 2px;
+  padding: 2px 2px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .footer__logo svg {
@@ -2562,6 +2579,8 @@ button,
   }
 
   .booking__container {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 39px;
@@ -2589,11 +2608,10 @@ button,
 
   .booking__form {
     margin: auto;
-    width: 60%;
   }
 
   .booking__form form {
-    padding: 26px 52px 50px;
+    padding: 26px 50px 50px;
   }
 
   .contact {
@@ -2633,13 +2651,19 @@ button,
     transform: translate(0, -4px);
   }
 
+  .footer {
+    margin-top: 63px;
+  }
+
   .footer__container {
+    padding-top: 50px;
+    padding-bottom: 43px;
     -ms-grid-columns: 0.25fr 2fr 0.5fr;
     grid-template-columns: 0.25fr 2fr 0.5fr;
   }
 
   .footer__logo {
-    padding: 50px 0 42px;
+    padding: 0;
   }
 
   .footer__logo svg {
@@ -2649,9 +2673,9 @@ button,
 
   .footer__list {
     gap: 24px;
-    -webkit-transform: translate(0, 1px);
-    -ms-transform: translate(0, 1px);
-    transform: translate(0, 1px);
+    -webkit-transform: translate(0, -3px);
+    -ms-transform: translate(0, -3px);
+    transform: translate(0, -3px);
   }
 
   .footer__item-link {
@@ -2662,9 +2686,9 @@ button,
   .footer__list-social {
     margin-right: 1px;
     gap: 21px;
-    -webkit-transform: translate(0, 3px);
-    -ms-transform: translate(0, 3px);
-    transform: translate(0, 3px);
+    -webkit-transform: translate(0, -1px);
+    -ms-transform: translate(0, -1px);
+    transform: translate(0, -1px);
   }
 
   .footer__item-social-link svg {
@@ -2865,9 +2889,9 @@ button,
   }
 
   .is-open .nav__item-link {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     padding: 14px 0;
     font-size: 18px;
     line-height: 22px;
@@ -2986,11 +3010,8 @@ button,
     line-height: 22px;
   }
 
-  .booking__form {
-    width: 100%;
-  }
-
   .booking__form form {
+    width: 290px;
     padding: 35px 30px 39px;
   }
 
@@ -3066,7 +3087,7 @@ button,
   }
 
   .footer {
-    padding-top: 25px;
+    padding-top: 40px;
     padding-bottom: 11px;
   }
 
@@ -3081,7 +3102,7 @@ button,
   }
 
   .footer__logo {
-    padding: 15px 0 22px;
+    margin-bottom: 21px;
   }
 
   .footer__logo svg {
