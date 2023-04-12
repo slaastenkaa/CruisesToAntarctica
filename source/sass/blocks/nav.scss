@@ -5,7 +5,7 @@
 
 .nav__logo {
   height: fit-content;
-  padding: 35px 3px;
+  padding: 5px 3px;
 }
 
 .nav__logo svg {
@@ -36,7 +36,7 @@
 .nav__item-link {
   position: relative;
   display: block;
-  padding: 30px 3px;
+  padding: 5px 3px;
   font-family: inherit;
   font-weight: 500;
   font-size: $fz-default;
@@ -206,7 +206,7 @@
   }
 
   .is-open .nav__item-link {
-    width: max-content;
+    width: fit-content;
     padding: 14px 0;
     font-size: 18px;
     line-height: 22px;

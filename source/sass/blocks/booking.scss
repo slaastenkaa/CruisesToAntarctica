@@ -13,15 +13,14 @@
 }
 
 .booking__container {
-  display: grid;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 141px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 163px;
+  gap: 1vw;
 }
 
 .booking__content {
-  margin: auto auto auto 63px;
+  margin: auto;
   transform: translate(0, -12px);
 }
 
@@ -36,7 +35,7 @@
 
 .booking__content p {
   margin-top: 6px;
-  width: 77%;
+  width: 60%;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -44,14 +43,11 @@
   color: $color-tangaroa;
 }
 
-.booking__form {
-  margin-right: 63px;
-}
-
 .booking__form form {
   display: flex;
   flex-direction: column;
   padding: 26px 50px 50px;
+  width: 403px;
   background-color: $color-tangaroa;
 }
 
@@ -249,6 +245,7 @@
 
 @media (max-width: $vp-1023) {
   .booking__container {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 39px;
     padding-top: 72px;
@@ -275,11 +272,10 @@
 
   .booking__form {
     margin: auto;
-    width: 60%;
   }
 
   .booking__form form {
-    padding: 26px 52px 50px;
+    padding: 26px 50px 50px;
   }
 }
 
@@ -302,11 +298,8 @@
     line-height: 22px;
   }
 
-  .booking__form {
-    width: 100%;
-  }
-
   .booking__form form {
+    width: 290px;
     padding: 35px 30px 39px;
   }
 

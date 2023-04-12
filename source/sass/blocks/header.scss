@@ -4,6 +4,11 @@
   z-index: 1;
 }
 
+.header__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 @media (max-width: $vp-767) {
   .is-open .header__container {
     padding-left: 36px;

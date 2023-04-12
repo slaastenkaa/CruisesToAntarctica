@@ -16,12 +16,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0 18px;
-  gap: 30px;
+  // gap: 30px;
+  gap: 2.2vw;
 }
 
 .catalog__item {
+  display: grid;
   position: relative;
   min-height: 386px;
+  height: auto;
   background: $black-to-image;
   overflow: hidden;
   transition: $trans-modal;
@@ -65,17 +68,24 @@
   }
 }
 
+.catalog__item-picture {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
 .catalog__item img {
-  position: absolute;
+  // position: absolute;
+  // z-index: -1;
   width: 100%;
   height: 100%;
-  z-index: -1;
   object-fit: cover;
   object-position: center;
 }
 
 .catalog__item-content {
   display: grid;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
   height: 100%;
   padding: 8px 29px;
   transition: $trans-modal;

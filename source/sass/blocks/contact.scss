@@ -40,7 +40,8 @@
 
 .contact__item {
   display: grid;
-  grid-template-columns: 0.2fr 3.4fr;
+  grid-template-columns: 0.2fr 4.5fr;
+  gap: 0.5vw;
   transition: $trans-modal;
 }
 
@@ -65,6 +66,7 @@
 }
 
 .contact__item a {
+  width: fit-content;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
